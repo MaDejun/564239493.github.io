@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
     <title>
         
-        Hexo主题和博客发布 · Marine&#39;s Blog
+        Git认知学习 · Marine&#39;s Blog
         
     </title>
     <link rel="icon" href= /assets/zt.ico>
@@ -82,7 +82,7 @@
                 <a href="/" >Marine&#39;s Blog</a>
             </div>
             <div class="post-banner">
-                <span class="post-name">Hexo主题和博客发布</span>
+                <span class="post-name">Git认知学习</span>
             </div>
         </div>
     </div>
@@ -106,7 +106,7 @@
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Hexo主题和博客发布
+            Git认知学习
             <!-- 404 -->
             
         </h1>
@@ -130,12 +130,12 @@
             
             <div class="post-intro-meta">
                 <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2017/08/19</span>
+                <span class="post-intro-time">2017/08/20</span>
             </div>
             <!-- 
 
 <div class="post-share iconfont-archer">
-    <ul class="share-box" data-href = "/2017/08/19/Hexo使用/" data-title = "Hexo主题和博客发布" >
+    <ul class="share-box" data-href = "/2017/08/20/Git认知学习/" data-title = "Git认知学习" >
         <li class="to-weibo">分享到微博</li>
         <li class="to-wechat">分享到微信</li>
         <li class="to-qq">分享到QQ</li>
@@ -154,138 +154,84 @@
 </div>
     <article class="article-entry">
         <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><hr>
-<p>本文继上篇Hexo+Github构建个人博客，接着来记录下Hexo博客主题使用和博客文章发布的过程，也顺便练习练习Markdown。</p>
-<hr>
-<h3 id="Hexo主题应用"><a href="#Hexo主题应用" class="headerlink" title="Hexo主题应用"></a>Hexo主题应用</h3><hr>
+<p>Git教程：<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的Git教程</a><br>今日根据此教程认知和操作了Git，对于Git的概念理解和命令操作有了一定的熟练度。</p>
+<h3 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h3><hr>
 <ul>
-<li>使用Hexo主题：<a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank" rel="external">Archer</a>，</li>
-<li>该主题实例博客展示：<a href="http://firework.studio/" target="_blank" rel="external">http://firework.studio/</a></li>
-</ul>
-<p>个人也是参照该主题教程来做的，一下简单记录下过程。</p>
-<p>1.cd到博客项目根目录下：cd D:\nodejs\blog<br>2.下载主题：<br>npm install hexo-generator-json-content –save(不知道干嘛的)<br>git clone <a href="https://github.com/fi3ework/hexo-theme-archer.git" target="_blank" rel="external">https://github.com/fi3ework/hexo-theme-archer.git</a> themes/archer<br>3.修改blog目录下的 _config.yml 的 theme 字段为 archer：<br><code>theme: archer</code><br>4.404启用（我没试）<br>5.sidebar启用（没试）</p>
-<p>以上完成皮肤就算有个大概了，接下来进行部分字段修改，就可以正式使用了。</p>
-<hr>
-<h3 id="Hexo主题配置"><a href="#Hexo主题配置" class="headerlink" title="Hexo主题配置"></a>Hexo主题配置</h3><hr>
-<p>在D:\nodejs\blog\themes\archer路径下一样存在个 _config.yml文件用来修改主题的某些设置。</p>
-<pre><code># ========== 资料栏 ========== #
-# 头像路径
-avatar:
-# 博主名字，不填写该字段则默认采用Hexo配置文件中的author字段
-author:
-# 博客签名
-signature:
-# 社交账号
-social:
-  email:
-  github:
-  weibo:
-  zhihu:
-  facebook:
-  twitter:
-  instagram:
-  stack-overflow:
-  linkedin:
-  blog:
-# 友链
-friends:
-  friendA:
-  friendB:
-  friendC:
-
-# ========== 站点 ========== #
-# 网站的title，每篇文章后面也会加上此字段利于SEO
-SEO_title:
-# 显示在网站banner上的主标题
-main_title: 
-# 显示在网站banner上的副标题
-subtitle:
-# 主页banner的背景图片
-header_image:
-# 文章页的默认背景图片
-post_header_image:
-# 404页的背景图片
-_404_image:
-
-
-# ========== 评论插件 ========== #
-# 目前只支持一键添加livere评论（因为懒），其他评论插件可自行添加在post.ejs模板中的&lt;/main&gt;标签前。
-comment:
-  # 将你的livere的uid填入以下字段
-  livere:
-
-# ========== 统计 ========== #
-# 是否开启不蒜子统计
-busuanzi: false
-# 百度统计(填写siteID)
-baidu_analytics:
-# Google统计(填写siteID)
-google_analytics:
-# CNZZ统计
-CNZZ_analytics:
-
-# ========== 其他 ========== #
-# favicon
-favicon:
-# 首页的文章摘要字数(默认300)
-truncate_length:
-</code></pre><hr>
-<h3 id="Hexo-写博客"><a href="#Hexo-写博客" class="headerlink" title="Hexo 写博客"></a>Hexo 写博客</h3><hr>
+<li><p>创建仓库,把当前目录变成Git可以管理的仓库：</p>
 <blockquote>
-<p>.md == markdown语言编写的文件</p>
+<p>git init</p>
 </blockquote>
-<p>在D:\nodejs\blog\source_posts目录下就是我们博客文章的md文件了，也就是博客原文了。我自己每次新建一篇博客，就是复制一个原来的文档，保留文档的以下内容 ，其他删掉来写正文。</p>
-<pre><code>title: 8.17
-date: 2017-08-17 19:58:54
-tags: 日记
-</code></pre><hr>
-<h3 id="博客主题更新和发布博客"><a href="#博客主题更新和发布博客" class="headerlink" title="博客主题更新和发布博客"></a>博客主题更新和发布博客</h3><hr>
+</li>
+<li><p>文件添加到仓库,需要两步：</p>
+<blockquote>
+<p>git add readme.txt    //添加到暂存区，可反复多次使用，添加多个文件<br>  git commit -m “wrote a readme file”//暂存区的所有内容提交到当前分支</p>
+</blockquote>
+</li>
+<li><p>查看工作区状态</p>
+<blockquote>
+<p>git status//告诉你是否有文件被修改过<br>git diff //查看修改内容</p>
+</blockquote>
+</li>
+<li><p>回退</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，</div><div class="line">使用命令git reset --hard commit_id。</div><div class="line"></div><div class="line">穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。</div><div class="line">要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本</div></pre></td></tr></table></figure>
 <ul>
-<li>更换主题后需要执行清缓存操作,网页正常情况下可以忽略此条命令：</li>
+<li>管理修改</li>
 </ul>
-<blockquote>
-<p>hexo clean</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Git是如何跟踪修改的，每次修改，如果不add到暂存区，那就不会加入到commit中</div></pre></td></tr></table></figure>
 <ul>
-<li>生成静态网页</li>
+<li>撤销修改</li>
 </ul>
-<blockquote>
-<p>hexo g</p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，</div><div class="line">	  用命令：git checkout -- file。</div><div class="line">场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修</div><div class="line">	  改，分两步，</div><div class="line">	  第一步用命令git reset HEAD file，就回到了场景1，</div><div class="line">	  第二步按场景1操作。</div><div class="line">场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退	</div><div class="line">	  一节，不过前提是没有推送到远程库。</div></pre></td></tr></table></figure>
 <ul>
-<li>开启本地预览服务</li>
-</ul>
+<li><p>本地库关联远程库</p>
 <blockquote>
-<p>hexo s</p>
+<p>git remote add origin git@server-name:path/repo-name.git；</p>
 </blockquote>
+</li>
+<li><p>关联后，推送文件到远程库</p>
+<blockquote>
+<p>git push -u origin master    //第一次推送<br>git push origin master    //以后直接</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">关联推送，可能报错：</div><div class="line">报错:Permission denied (publickey).</div><div class="line">	fatal: Could not read from remote repository.</div><div class="line">解决办法：删除远端和当前key，重新生成key， </div><div class="line">	ssh-keygen -t rsa -C 564239493@qq.com连敲两次回车键</div><div class="line">	会在本地C:\Users\你的用户名.ssh生成文件夹，里面有id_rsa和 </div><div class="line">	id_rsa.pub两个文件 </div><div class="line">	然后复制id_rsa.pub文件里面的内容，到</div><div class="line">	https://github.com/settings/keys新建一个，</div><div class="line">	然后重新push即可</div></pre></td></tr></table></figure>
 <ul>
-<li>发布线上</li>
+<li>先建远程库，本地clone</li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。</div><div class="line">Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。</div></pre></td></tr></table></figure>
+<ul>
+<li><p><strong>分支</strong></p>
 <blockquote>
-<p>hexo d</p>
+<p>Git鼓励大量使用分支：<br>  查看分支：git branch<br>  创建分支：git branch <name><br>  切换分支：git checkout <name><br>  创建+切换分支：git checkout -b <name><br>  合并某分支到当前分支：git merge <name><br>  删除分支：git branch -d <name></name></name></name></name></name></p>
 </blockquote>
-<p>此时，打开 [我的github博客] <a href="https://564239493.github.io/就可以看见了,O(∩_∩)O" target="_blank" rel="external">https://564239493.github.io/就可以看见了,O(∩_∩)O</a></p>
-<hr>
-<h3 id="到此结束"><a href="#到此结束" class="headerlink" title="到此结束"></a>到此结束</h3><hr>
-<blockquote>
-<p>1.Markdown编写有待进步<br>2.带图片博客<br>3.Git了解，命令使用<br>惨不忍睹的排版！！！</p>
-</blockquote>
+</li>
+<li><p>解决冲突</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。</div><div class="line">用git log --graph 命令可以看到分支合并图。</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>分支策略</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Git分支十分强大，在团队开发中应该充分应用。</div><div class="line"></div><div class="line">合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支， </div><div class="line">能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。</div><div class="line"></div><div class="line">master用于正式发布版本，dev分支用户干活，每个人有自己的分支user1，然后merge到dev上，然后dev再merge到master</div></pre></td></tr></table></figure>
+<ul>
+<li>bug分支</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；</div><div class="line"></div><div class="line">当手头工作没有完成时，先把工作现场 git stash 一下，然后去修复bug，修复后，再 git stash pop，回到工作现场。</div></pre></td></tr></table></figure>
+<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><hr>
+<p>本文仅根据今日学习的笔记做个博客，详细学习还需看 <a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的Git教程</a> 。</p>
+<p>后续，可能会先再次了解Hexo,然后就是JavaScript，java的基础巩固，穿插着对于前端vue.js,react等的学习。</p>
 
     </article>
     <!-- 前后页  -->
     <ul class="post-pager">
         
-            <li class="previous">
-                <a href= "/2017/08/20/Git认知学习/" title= Git认知学习 >
-                    <span>Previous Post</span>
-                    <span>Git认知学习</span>
-                </a>
-            </li>
-        
         
             <li class="next">
-                <a href= "/2017/08/18/hexo+github个人博客/" title= hexo+github搭建个人博客 >
+                <a href= "/2017/08/19/Hexo使用/" title= Hexo主题和博客发布 >
                     <span>Next Post</span>
-                    <span>hexo+github搭建个人博客</span>
+                    <span>Hexo主题和博客发布</span>
                 </a>
             </li>
         
