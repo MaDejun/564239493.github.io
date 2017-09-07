@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
     <title>
         
-        hexo+github搭建个人博客 · Marine&#39;s Blog
+        Marine&#39;s Blog
         
     </title>
     <link rel="icon" href= /assets/zt.ico>
@@ -68,7 +68,7 @@
     
 </head>
     
-        <body class="post-body">
+        <body class="four-zero-four-body">
     
     
 <header class="header">
@@ -76,20 +76,8 @@
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
     
-    <div class="banner">
-        <div class="toggle-banner">
-            <div class="blog-title">
-                <a href="/" >Marine&#39;s Blog</a>
-            </div>
-            <div class="post-banner">
-                <span class="post-name">hexo+github搭建个人博客</span>
-            </div>
-        </div>
-    </div>
-    
     <a class="home-link" href=/>Marine's Blog</a>
 </header>
-    
     
     <div class="wrapper">
         <div class="site-intro">
@@ -97,102 +85,74 @@
     <!-- 主页  -->
     
     
-    <!-- 404页  -->
     
-    <div class="site-intro-img" style="background-image: url(/intro/bg1.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(http://oumn0o088.bkt.clouddn.com/404.jpg)"></div>
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            hexo+github搭建个人博客
-            <!-- 404 -->
+            [404]
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-            
-        </p>
-        <!-- 404 -->
+            <p class="intro-subtitle"> </p>
         
         <!-- 文章页meta -->
-        
-            <!-- 文章页标签  -->
-            
-                <div class= post-intro-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-href = 技术学习>技术学习</a>
-    
-</div>
-            
-            <div class="post-intro-meta">
-                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2017/08/18</span>
-            </div>
-            <!-- 
-
-<div class="post-share iconfont-archer">
-    <ul class="share-box" data-href = "/2017/08/18/hexo+github个人博客/" data-title = "hexo+github搭建个人博客" >
-        <li class="to-weibo">分享到微博</li>
-        <li class="to-wechat">分享到微信</li>
-        <li class="to-qq">分享到QQ</li>
-        <li class="to-twitter">分享到twitter</li>
-    </ul>
-</div> -->
         
     </div>
 </div>
         <div class="container">
-            <main class="main post-page">
+            <main class="main index-page">
     <div class="qr-mask"></div>
 <div class="QRcode-box">
     <p>扫描二维码分享</p>
     <div class="QRcode-close">×</div>
 </div>
-    <article class="article-entry">
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><hr>
-<p>本来想通过vue.js+nodejs+mongo构建个博客项目，一方面可以实践新技术,另一方面也可以有自己的个人博客，后来因为各种拖延，一直没开始，(lll￢ω￢)，突然看到朋友都在使用git, 也想试试手，刚好又看到大家都用github的page来搭建博客，就来试试，我是采用的hexo+github来实现的，好像还有一个je什么的，截至这边博客前还没有去了解。本文也只是简单写写自己搭建的过程，不是很详细的教学，仅仅是我参照网上资料来实现的，目前，只是简单的能用相关的东西，对于每个技术和知识点都不深入了解，留来后续研究。 </p>
-<h3 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h3><hr>
-<p>   1.官网下载最新nodejs安装，新版无需配置环境变量，会帮我们实现，安装后我的node版本：8.3.0 ，npm版本：5.3.0<br>   2.（可选）修改npm全局安装路径:<br>         npm config set prefix “D:\nodejs\node_global”<br>         npm config set cache “D:\nodejs\node_cache”<br>    3.git下载安装，我是非官网,百度软件中心下载的<br>    4.npm hexo下载：npm install hexo-cli -g,根据需要决定是否需要添加hexo环境变量（中间有个插叙，我在环境变量path，node的路径后添加了个git的路径，导致node,npm命令失效，将git路径移至node路径前就好了。。。）<br>    5.hexo init（cd 到创建的blog目录，或者直接此处写blog，则会在当前目录创建blog目录）<br>    6.npm install<br>        hexo server（出错）hexo s（此命令本地预览博客，localhost:4000）<br>        此时若出现如下报错：<br>        ERROR Local hexo not found in ~/blog<br>        ERROR Try runing: ‘npm install hexo –save’<br>        则执行命令：<br>        npm install hexo –save<br>        若无报错，自行忽略此步骤。</p>
-<p>####到此处，最基本的博客项目就好了。接下来就是将博客和github结合：<br>1.cd到blog文件夹下，打开_config.yml文件<br>2.打开后往下滑到最后，修改成下边的样子（冒号后记得加空格）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">type: git</div><div class="line">repository: https://github.com/XXX/XXX.github.io.git</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
-<p>3.在blog文件夹目录下执行生成静态页面命令：hexo generate        或者：hexo g<br>4.部署到github命令:hexo deploy            或者：hexo d</p>
-<p>hexo deploy命令执行成功后，浏览器中打开网址<a href="http://XXX.github.io就能看到了。" target="_blank" rel="external">http://XXX.github.io就能看到了。</a><br>到此时，基本框子，就差不多了，</p>
-<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><hr>
-<h4 id="一些过程不在记录"><a href="#一些过程不在记录" class="headerlink" title="一些过程不在记录"></a>一些过程不在记录</h4><p>1.github注册，博客仓库的建立<br>2.hexo主题,发布文章等操作的相关记录</p>
-<p>以上过程是在昨天完成的，今天联系了git的相关命令，hexo文章博客的发布等内容，相关博客文章，可以后续补充。（好像我这个版式有点丑啊，第一次markdown编写，(●ˇ∀ˇ●)）</p>
-<hr>
-<blockquote>
-<p>参考内容：[<a href="http://www.cnblogs.com/MuYunyun/p/5927491.html#_label1" target="_blank" rel="external">http://www.cnblogs.com/MuYunyun/p/5927491.html#_label1</a>]</p>
-</blockquote>
-
-    </article>
-    <!-- 前后页  -->
-    <ul class="post-pager">
-        
-            <li class="previous">
-                <a href= "/2017/08/19/Hexo使用/" title= Hexo主题和博客发布 >
-                    <span>Previous Post</span>
-                    <span>Hexo主题和博客发布</span>
-                </a>
-            </li>
-        
-        
-            <li class="next">
-                <a href= "/2017/08/18/8-18/" title= 8.18 >
-                    <span>Next Post</span>
-                    <span>8.18</span>
-                </a>
-            </li>
-        
-    </ul>
-    <!-- 来必力City版安装代码 -->
-
     
-
-<!-- City版安装代码已完成 -->
+    
+    
+        <article class="index-post">
+            <a class="content-show-full" href = "/2017/09/07/koa学习1/" >
+                <div class="abstract-post-title">
+                    <h2 class="abstract-title">
+                        <span>
+                            koa学习1
+                        </span>
+                    </h2>
+                </div>
+                <div class="abstract-content">
+                    前言
+学习来源：廖雪峰教程开发工具：WebStorm
+前几天看egg.js，门都入不了，(lll￢ω￢)，放弃，既然egg在koa基础发展而来，那我就看koa，简单记录下练习过程,不包含具体细节。
+正文
+首先，我们创建一个目录hello_koa并作为工程目录。然后，我们创建app.js，输入以下代码：12345678910111213141516// 导入koa，和koa 1.x不同，在koa2中，我们导入的是一个class，因此用大写的Koa表示:const Koa = require(&apos;koa&apos;);// 创建一个Koa对象表示web app本身:const app...
+                </div>
+            </a>
+            <div class="abstract-post-meta">
+                <!-- tags  -->
+                
+                <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = 技术>技术</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = koa>koa</a>
+    
+</div>
+                
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/09/07</span>
+                </div>
+            </div>
+        </article>
+    
+    <!-- paginator  -->
+    
 </main>
             <!-- profile -->
             
