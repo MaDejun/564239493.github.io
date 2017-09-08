@@ -117,24 +117,25 @@
     
     
         <article class="index-post">
-            <a class="content-show-full" href = "/2017/08/18/8-18/" >
+            <a class="content-show-full" href = "/2017/08/23/hexo发布带图片博客/" >
                 <div class="abstract-post-title">
                     <h2 class="abstract-title">
                         <span>
-                            8.18
+                            hexo发布带图片博客
                         </span>
                     </h2>
                 </div>
                 <div class="abstract-content">
-                    git命令行练习
+                    前言
+参考资料：http://www.jianshu.com/p/cf0628478a4e
+正文
+1.修改hexo博客项目根目录_config.yml配置文件post_asset_folder项为true。
+2.hexo new “hexo发布带图片博客”
+3.在source/_post文件夹里面就会出现一个“hexo发布带图片博客.md”的文件和一个“hexo发布带图片博客”的文件夹。
+4.引用图片： 
+实例
 
-今日试了试git相关命令，接下来：还需要保存hexo博客源码以及vue.js,phtyon的了解。
-本文也是为了试验hexo.g,hexo.d命令：直接新建一个md文件，开头加个‘title: 8.17date: 2017-08-17 19:58:54tags: 日记’编写博客后，执行 g,d命令就可以，s命令可以本地预览
-
-注意
-
-注意编码格式UTF-8！！！
-
+CSDN肯定看不见，来这吧，https://564239493.github.io/
 
 
                 </div>
@@ -144,13 +145,15 @@
                 
                 <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-href = 日记>日记</a>
+        <a class="post-tag" href="javascript:void(0);" data-href = 技术>技术</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = hexo>hexo</a>
     
 </div>
                 
                 <!-- date  -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/08/18</span>
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/08/23</span>
                 </div>
             </div>
         </article>
@@ -158,17 +161,25 @@
     
     
         <article class="index-post">
-            <a class="content-show-full" href = "/2017/08/17/8-17/" >
+            <a class="content-show-full" href = "/2017/08/19/Hexo使用/" >
                 <div class="abstract-post-title">
                     <h2 class="abstract-title">
                         <span>
-                            8.17
+                            Hexo主题和博客发布
                         </span>
                     </h2>
                 </div>
                 <div class="abstract-content">
-                      2017年8月17日20点41分,hexo + github构建个人博客初次尝试成功。  感觉这样的博客书写比较繁琐  接下来打算学习如何保存本地hexo代码,和更加轻松，或者可视化发布博客。
+                    前言
+本文继上篇Hexo+Github构建个人博客，接着来记录下Hexo博客主题使用和博客文章发布的过程，也顺便练习练习Markdown。
 
+Hexo主题应用
+
+使用Hexo主题：Archer，
+该主题实例博客展示：http://firework.studio/
+
+个人也是参照该主题教程来做的，一下简单记录下过程。
+1.cd到博客项目根目录下：cd D:\nodejs\blog2.下载主题：npm install hexo-generator-json-content –save(不知道干嘛的)git clone https://github.com/fi3ework/hexo-them...
                 </div>
             </a>
             <div class="abstract-post-meta">
@@ -176,13 +187,51 @@
                 
                 <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-href = 日记>日记</a>
+        <a class="post-tag" href="javascript:void(0);" data-href = 技术>技术</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = hexo>hexo</a>
     
 </div>
                 
                 <!-- date  -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/08/17</span>
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/08/19</span>
+                </div>
+            </div>
+        </article>
+    
+    
+    
+        <article class="index-post">
+            <a class="content-show-full" href = "/2017/08/18/hexo+github个人博客/" >
+                <div class="abstract-post-title">
+                    <h2 class="abstract-title">
+                        <span>
+                            hexo+github搭建个人博客
+                        </span>
+                    </h2>
+                </div>
+                <div class="abstract-content">
+                    前言
+本来想通过vue.js+nodejs+mongo构建个博客项目，一方面可以实践新技术,另一方面也可以有自己的个人博客，后来因为各种拖延，一直没开始，(lll￢ω￢)，突然看到朋友都在使用git, 也想试试手，刚好又看到大家都用github的page来搭建博客，就来试试，我是采用的hexo+github来实现的，好像还有一个je什么的，截至这边博客前还没有去了解。本文也只是简单写写自己搭建的过程，不是很详细的教学，仅仅是我参照网上资料来实现的，目前，只是简单的能用相关的东西，对于每个技术和知识点都不深入了解，留来后续研究。 
+搭建
+   1.官网下载最新nodejs安装，新版无需配置...
+                </div>
+            </a>
+            <div class="abstract-post-meta">
+                <!-- tags  -->
+                
+                <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = 技术>技术</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-href = hexo>hexo</a>
+    
+</div>
+                
+                <!-- date  -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer"></span><span class="abstract-time">2017/08/18</span>
                 </div>
             </div>
         </article>
